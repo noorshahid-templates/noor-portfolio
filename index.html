@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Noor Shahid — Social Media Manager & Meta Ads Specialist</title>
+<meta name="description" content="Noor Shahid — Social Media Manager & Meta Ads Specialist working with clients worldwide. SMM, Meta Ads, content creation, landing pages, GBP setup & NFC cards." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --deep:#3D1E5C; --royal:#6B3FA0; --lav:#B79CDB;
+  --bg:#FDFBFF; --bg-soft:#F6F1FC; --surface:#FFFFFF;
+  --ink:#241B2F; --muted:#5E5470; --line:#E4DAF2;
+  --tag-bg:#F1EAF9;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#150D24; --bg-soft:#1C1230; --surface:#1E1433; --ink:#F3EEFA; --muted:#C9BCE2; --line:#3A2A57; --tag-bg:#2C1E47; }
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{margin:0;font-family:'Poppins',system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100%;width:100%}
+a{color:inherit}
+img,svg,video{max-width:100%}
+h1,h2,h3{margin:0;overflow-wrap:break-word}
+p{margin:0;overflow-wrap:break-word}
+.wrap{width:100%;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px;min-width:0;box-sizing:border-box}
+.serif{font-family:'Playfair Display',serif}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:14px 28px;padding:14px 20px;flex-wrap:wrap;width:100%}
+.logo{font-family:'Playfair Display',serif;font-weight:800;font-size:1.25rem;color:var(--deep);text-decoration:none;letter-spacing:-.01em;flex:0 0 auto;display:inline-flex;align-items:center;gap:.32em;min-height:44px;white-space:nowrap;margin-right:8px}
+@media(prefers-color-scheme:dark){.logo{color:#EFE7FD}}
+.logo span{color:var(--royal);white-space:nowrap}
+.header-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto;margin-left:auto}
+nav.main-nav{display:flex;align-items:center;gap:28px;flex-wrap:wrap;flex:1 1 auto;justify-content:center;min-width:0}
+nav.main-nav a{font-size:.92rem;font-weight:500;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+nav.main-nav a:hover{color:var(--royal)}
+.nav-cta{background:var(--deep);color:#fff !important;font-weight:700;font-size:.82rem;letter-spacing:.04em;padding:10px 18px;text-transform:uppercase;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;text-align:center}
+.nav-cta:hover{background:var(--royal)}
+.menu-toggle{display:none;width:44px;height:44px;min-width:44px;min-height:44px;border:1px solid var(--deep);background:var(--deep);color:#fff;cursor:pointer;align-items:center;justify-content:center;padding:0}
+.menu-toggle svg{width:22px;height:22px;display:block}
+.menu-toggle:focus-visible{outline:3px solid var(--lav);outline-offset:2px}
+
+/* HERO */
+.hero{padding:96px 0 80px}
+.role-pill{display:inline-block;background:var(--deep);color:#fff;font-size:.82rem;font-weight:600;padding:7px 14px;letter-spacing:.01em}
+.hero h1{font-family:'Playfair Display',serif;font-weight:800;font-size:clamp(2.7rem,6.2vw,4.9rem);line-height:1.06;letter-spacing:-.015em;color:var(--deep);max-width:980px;margin-top:34px}
+@media(prefers-color-scheme:dark){.hero h1{color:#F3EEFA}}
+.hero-rule{border:0;border-top:1px solid var(--line);margin:44px 0 0}
+.hero-row{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;padding-top:36px;flex-wrap:wrap}
+.hero-row p{color:var(--muted);font-size:1.08rem;max-width:480px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;flex-shrink:0}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:.95rem;padding:14px 22px;min-height:52px;border:1px solid var(--deep)}
+.btn-solid{background:var(--deep);color:#fff}
+.btn-solid:hover{background:var(--royal);border-color:var(--royal)}
+.btn-ghost{background:transparent;color:var(--deep)}
+@media(prefers-color-scheme:dark){.btn-ghost{color:#F3EEFA;border-color:#F3EEFA}}
+.btn-ghost:hover{border-color:var(--royal);color:var(--royal)}
+
+/* SECTION SHELL — left label column + right content, like the reference */
+section.block{padding:88px 0;border-top:1px solid var(--line)}
+.cols{display:grid;grid-template-columns:280px minmax(0,1fr);gap:40px;align-items:start;width:100%;min-width:0}
+.cols>*,.contact-grid>*,.form-grid>*{min-width:0}
+.cols>div{min-width:0;width:100%}
+.side{position:sticky;top:96px}
+.kicker{font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--royal);margin-bottom:14px}
+.side h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3vw,2.5rem);font-weight:700;line-height:1.15;color:var(--deep)}
+@media(prefers-color-scheme:dark){.side h2{color:#F3EEFA}}
+.side p{color:var(--muted);margin-top:16px;font-size:1rem;max-width:300px}
+.side .btn{margin-top:24px}
+
+/* WORK — vertical list */
+.work-list{border:1px solid var(--line);background:var(--surface)}
+.work-item{padding:38px 40px}
+.work-item + .work-item{border-top:1px solid var(--line)}
+.work-item.alt{background:var(--bg-soft)}
+.work-meta{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}
+.work-tag{font-size:.78rem;font-weight:600;background:var(--tag-bg);color:var(--ink);padding:5px 11px}
+.work-role{font-size:.85rem;color:var(--muted)}
+.work-item h3{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,2.6vw,2.15rem);font-weight:700;color:var(--deep);margin-top:0;line-height:1.2}
+.work-item .icon-row{margin-top:18px}
+@media(prefers-color-scheme:dark){.work-item h3{color:#F3EEFA}}
+.work-sub{font-weight:600;font-size:1rem;margin-top:6px}
+.work-desc{color:var(--muted);margin-top:14px;max-width:640px}
+.work-foot{border-top:1px solid var(--line);margin-top:26px;padding-top:20px;display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap}
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.tags span{font-size:.8rem;color:var(--muted);border:1px solid var(--line);padding:5px 11px;background:var(--surface)}
+.status{font-size:.8rem;font-weight:500;background:var(--tag-bg);padding:6px 12px;white-space:nowrap}
+.audit-list{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:12px}
+.audit-list li{font-size:.97rem;color:var(--muted);display:flex;align-items:center;gap:12px}
+.audit-list b{color:var(--ink);font-weight:600}
+.work-pages{margin-top:20px}
+.work-pages .wp-label{font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+/* SOCIAL ICON ROWS */
+.icon-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border:1px solid var(--line);background:var(--surface);color:var(--royal);text-decoration:none;transition:background .18s ease,color .18s ease,border-color .18s ease,transform .18s ease}
+.icon-btn svg{width:26px;height:26px;display:block}
+.icon-btn:hover{background:var(--deep);border-color:var(--deep);color:#fff;transform:translateY(-2px)}
+.icon-btn:focus-visible{outline:3px solid var(--lav);outline-offset:2px}
+.icon-btn.sm{width:44px;height:44px;min-width:44px;min-height:44px;flex-shrink:0}
+.icon-btn.sm svg{width:20px;height:20px}
+@media (prefers-reduced-motion: reduce){.icon-btn{transition:none}.icon-btn:hover{transform:none}}
+
+/* SERVICES — horizontal scroll row (swipe/scroll sideways, next card peeks) */
+.svc-grid{display:flex;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;scroll-padding-left:2px;gap:16px;width:100%;min-width:0;padding:4px 2px 16px;background:transparent;border:0;scrollbar-width:thin;scrollbar-color:var(--lav) transparent}
+.svc-grid::-webkit-scrollbar,.price-cols::-webkit-scrollbar,.onetime::-webkit-scrollbar{height:6px}
+.svc-grid::-webkit-scrollbar-thumb,.price-cols::-webkit-scrollbar-thumb,.onetime::-webkit-scrollbar-thumb{background:var(--lav);border-radius:99px}
+.svc-grid::-webkit-scrollbar-track,.price-cols::-webkit-scrollbar-track,.onetime::-webkit-scrollbar-track{background:transparent}
+.svc{padding:34px 30px;background:var(--surface);min-width:0;flex:1 0 272px;max-width:320px;scroll-snap-align:start;border:1px solid var(--line)}
+.svc.alt{background:var(--bg-soft)}
+.num{display:inline-block;background:var(--deep);color:#fff;font-size:.78rem;font-weight:700;padding:4px 10px;letter-spacing:.05em}
+.svc h3{font-size:1.12rem;font-weight:600;margin-top:20px;line-height:1.35}
+.svc p{color:var(--muted);font-size:.95rem;margin-top:8px}
+
+/* PRICING — centered professional tables */
+.price-group + .price-group{margin-top:52px}
+.price-group h3.pg-title{font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--royal);margin-bottom:0;text-align:center}
+.price-cols{display:flex;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;scroll-padding-left:2px;gap:16px;margin-top:16px;width:100%;min-width:0;padding:4px 2px 16px;background:transparent;border:0;scrollbar-width:thin;scrollbar-color:var(--lav) transparent}
+.plan{padding:30px 28px 32px;text-align:center;display:flex;flex-direction:column;align-items:center;background:var(--surface);min-width:0;flex:1 0 262px;max-width:320px;scroll-snap-align:start;border:1px solid var(--line)}
+.plan.alt{background:var(--bg-soft)}
+.plan-name{font-weight:600;font-size:1.05rem;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px;line-height:1.3}
+.plan-name .pop{display:inline-block;background:var(--deep);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;margin-left:0;vertical-align:2px}
+.plan.featured{box-shadow:inset 0 3px 0 var(--royal)}
+.plan .audit-line{color:var(--muted);font-size:.95rem;margin-top:12px;line-height:1.6;text-align:center;max-width:260px}
+.plan-price{font-family:'Playfair Display',serif;font-size:1.85rem;font-weight:800;color:var(--deep);margin-top:10px;line-height:1.15;text-align:center}
+@media(prefers-color-scheme:dark){.plan-price{color:#F3EEFA}}
+.plan-price small{font-family:'Poppins',sans-serif;font-size:.85rem;font-weight:500;color:var(--muted);display:block;margin-top:2px}
+.plan ul{list-style:none;margin:16px 0 0;padding:0;text-align:center;width:100%}
+.plan ul li{font-size:.92rem;color:var(--muted);padding:4px 0;text-align:center}
+.price-note{color:var(--muted);font-size:.9rem;margin-top:14px;text-align:center}
+.onetime{display:flex;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;scroll-padding-left:2px;gap:16px;margin-top:16px;width:100%;min-width:0;padding:4px 2px 16px;background:transparent;border:0;scrollbar-width:thin;scrollbar-color:var(--lav) transparent}
+.onetime .plan{background:var(--surface)}
+.onetime .plan.alt{background:var(--bg-soft)}
+.onetime .plan .btn{margin-top:18px;padding:11px 18px;min-height:46px;font-size:.9rem}
+
+/* ABOUT */
+.about-text p{font-size:1.08rem;color:var(--ink);max-width:680px}
+.about-text p + p{margin-top:20px;color:var(--muted)}
+
+/* CONTACT FORM */
+.form-card{border:1px solid var(--line);background:var(--surface);padding:40px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field.full{grid-column:1 / -1}
+.field label{font-size:.9rem;font-weight:600;color:var(--ink);line-height:1.4}
+.field label .req{color:var(--royal)}
+.field input,.field select,.field textarea{font-family:'Poppins',sans-serif;font-size:1rem;color:var(--ink);background:var(--bg);border:1px solid var(--line);padding:14px 16px;width:100%;border-radius:0;outline:none;-webkit-appearance:none;appearance:none}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%236B3FA0' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:42px}
+.field textarea{resize:vertical;min-height:140px;line-height:1.6}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--royal);box-shadow:0 0 0 3px rgba(107,63,160,.15)}
+.field input::placeholder,.field textarea::placeholder{color:var(--muted);opacity:.75}
+.form-submit{margin-top:26px;width:100%;justify-content:center;background:var(--deep);color:#fff;border:1px solid var(--deep);font-weight:700;font-size:1rem;padding:16px 22px;min-height:56px;cursor:pointer;font-family:'Poppins',sans-serif}
+.form-submit:hover{background:var(--royal);border-color:var(--royal)}
+.form-wa{margin-top:28px;padding-top:24px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.form-wa p{font-size:.95rem;color:var(--muted)}
+.form-wa a{color:var(--royal);font-weight:600;text-decoration:none;word-break:break-word}
+.nowrap{white-space:nowrap}
+@media(max-width:640px){.form-card{padding:28px 22px}.form-grid{grid-template-columns:1fr}}
+
+/* CONTACT — dark band like the reference */
+.contact{background:var(--deep);color:#fff;margin-top:0}
+.contact-in{padding:88px 20px}
+.contact .kicker{color:var(--lav)}
+.contact h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.15;max-width:480px}
+.contact p.lead{color:#D9CDF2;margin-top:18px;max-width:440px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contact-card{background:#fff;color:var(--ink);padding:38px}
+.contact-card .btn{width:100%;justify-content:center}
+.contact-rows{margin-top:26px;display:grid;gap:14px;font-size:.97rem}
+.contact-rows b{display:block;font-size:.72rem;letter-spacing:.1em;color:var(--muted);font-weight:600;margin-bottom:2px}
+.contact-rows a{color:var(--royal);font-weight:600;text-decoration:none;word-break:break-word}
+footer{color:var(--muted);font-size:.85rem}
+footer.wrap{display:flex;flex-direction:row;align-items:center;justify-content:center;text-align:center;gap:12px 20px;flex-wrap:wrap;padding:28px 20px;width:100%;max-width:1200px;margin:0 auto}
+footer.wrap span{text-align:center;width:100%;line-height:1.5}
+
+/* ============ LAPTOP — 1025px to 1200px (slightly narrower side column) ============ */
+@media (min-width:1025px) and (max-width:1200px){
+  .cols{grid-template-columns:260px minmax(0,1fr);gap:36px}
+  .plan{padding:28px 18px 30px;flex-basis:250px}
+  .svc{flex-basis:260px}
+  .svc{padding:30px 26px}
+  .work-item{padding:34px 30px}
+}
+
+/* ============ STACK SIDE LABEL — at/below 1024px label goes ABOVE content, full width ============ */
+@media (max-width:1024px){
+  .cols{grid-template-columns:minmax(0,1fr);gap:36px}
+  .side{position:static;width:100%;max-width:100%}
+  .side p{max-width:560px}
+  .contact-grid{grid-template-columns:minmax(0,1fr)}
+}
+
+/* ============ HAMBURGER HEADER — at/below 900px ============ */
+@media (max-width:900px){
+  .header-in{gap:10px 14px;padding:10px 20px;flex-wrap:wrap}
+  .logo{font-size:1.18rem;margin-right:0}
+  .header-actions{gap:8px;margin-left:auto}
+  .nav-cta{font-size:.74rem;padding:10px 12px;letter-spacing:.02em;white-space:nowrap}
+  .menu-toggle{display:inline-flex}
+  nav.main-nav{display:none;width:100%;flex:1 1 100%;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;border-top:1px solid var(--line);padding:6px 0 4px;order:3}
+  nav.main-nav.open{display:flex}
+  nav.main-nav a{display:flex;align-items:center;min-height:48px;padding:4px 2px;font-size:1rem;border-bottom:1px solid var(--line);width:100%}
+  nav.main-nav a:last-child{border-bottom:0}
+}
+
+/* ============ TABLET — 641px to 1024px ============ */
+@media (min-width:641px) and (max-width:1024px){
+  .wrap{width:100%;padding:0 20px}
+  section.block{padding:68px 0}
+  .hero{padding:72px 0 60px}
+  .hero h1{font-size:clamp(2.6rem,5.6vw,3.6rem)}
+  .hero-row{align-items:flex-start}
+  .svc{padding:30px 28px;flex:0 0 44%;max-width:none}
+  .plan{flex:0 0 44%;max-width:none}
+  .form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .form-card{padding:34px 30px}
+  .contact-grid{gap:40px}
+  .contact h2{max-width:560px}
+  .contact p.lead{max-width:560px}
+  .contact-in{padding:68px 20px}
+  .work-item{padding:34px 32px}
+}
+
+/* ============ PHONE — up to 640px ============ */
+@media(max-width:640px){
+  body{font-size:16px;line-height:1.65}
+  .wrap{width:100%;padding:0 16px}
+  /* Header: logo + CTA + hamburger on one row, menu drops below (hamburger rules live in the 900px block) */
+  .header-in{padding:10px 16px;gap:10px 12px}
+  .logo{font-size:1.15rem}
+  /* Hero */
+  .hero{padding:52px 0 48px}
+  .role-pill{font-size:.78rem;line-height:1.45;padding:7px 12px;max-width:100%}
+  .hero h1{font-size:clamp(2.3rem,10.8vw,2.9rem);line-height:1.1;margin-top:26px}
+  .hero-rule{margin-top:32px}
+  .hero-row{flex-direction:column;align-items:stretch;gap:24px;padding-top:28px}
+  .hero-row p{font-size:1rem;max-width:100%}
+  .hero-actions{flex-direction:column;width:100%;gap:12px}
+  .hero-actions .btn{width:100%;justify-content:center;text-align:center}
+  /* Sections */
+  section.block{padding:56px 0}
+  .cols{grid-template-columns:minmax(0,1fr);gap:32px}
+  .side{position:static}
+  .side p{max-width:100%}
+  .side h2{font-size:1.85rem}
+  /* Work: single column list, comfortable padding */
+  .work-item{padding:28px 20px}
+  .work-item h3{font-size:1.55rem}
+  .work-sub{font-size:.97rem}
+  .audit-list{gap:10px}
+  .audit-list li{gap:10px;flex-wrap:wrap}
+  .icon-row{gap:10px}
+  /* Services & pricing: horizontal scroll rows — card ~82% wide, next card peeks in */
+  .svc-grid,.price-cols,.onetime{gap:12px;padding-bottom:14px}
+  .svc{padding:28px 22px;flex:0 0 82%;max-width:none}
+  .plan{padding:28px 20px 30px;flex:0 0 82%;max-width:none}
+  .plan-price{font-size:1.7rem}
+  .price-group + .price-group{margin-top:44px}
+  /* Form: fields stack */
+  .form-card{padding:26px 18px}
+  .form-grid{grid-template-columns:minmax(0,1fr);gap:18px}
+  .field input,.field select,.field textarea{font-size:16px;min-height:48px}
+  .field textarea{min-height:130px}
+  .form-wa{flex-direction:column;align-items:flex-start}
+  .form-wa p{font-size:.92rem;line-height:1.7;overflow-wrap:break-word}
+  /* Contact band stacks */
+  .contact-in{padding:56px 16px}
+  .contact-grid{grid-template-columns:minmax(0,1fr);gap:36px}
+  .contact h2{font-size:2rem;max-width:100%}
+  .contact p.lead{max-width:100%}
+  .contact-card{padding:26px 20px}
+  .contact-card .btn{white-space:normal;text-align:center;line-height:1.4}
+  .contact-rows{font-size:.95rem}
+  .contact-rows a{overflow-wrap:anywhere}
+  .contact-rows a.nowrap{overflow-wrap:normal;font-size:.98rem}
+  footer.wrap{flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:6px;padding:26px 16px}
+  footer.wrap span{text-align:center;width:100%}
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.menu-toggle{transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-in">
+    <a class="logo" href="#top">Noor <span>Shahid</span></a>
+    <nav class="main-nav" id="main-nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="header-actions">
+      <a class="nav-cta" href="https://wa.me/923056730977?text=Hi%20Noor!%20I%20want%20an%20audit%20for%20my%20page." target="_blank" rel="noopener">Get in Touch</a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <span class="role-pill">Social Media Manager · Meta Ads Specialist · Content Creator</span>
+    <h1>I help small brands turn followers into customers.</h1>
+    <hr class="hero-rule">
+    <div class="hero-row">
+      <p>Consistent content and Meta Ads, managed for you month after month — so you can focus on running your business.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="https://wa.me/923056730977?text=Hi%20Noor!%20I%20want%20an%20audit%20for%20my%20page." target="_blank" rel="noopener">Get an Audit on WhatsApp →</a>
+        <a class="btn btn-ghost" href="#pricing">View Pricing →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SELECTED WORK -->
+  <section class="block" id="work">
+    <div class="cols">
+      <div class="side">
+        <p class="kicker">Proof of Work</p>
+        <h2>Selected Work</h2>
+        <p>Real client work — brand launches, full social setups and page audits, delivered end to end.</p>
+      </div>
+      <div class="work-list">
+
+        <article class="work-item">
+          <h3>Hafiz Autos</h3>
+          <p class="work-sub">Social media setup &amp; launch content — car accessories &amp; decoratives, Montgomery Road</p>
+          <div class="icon-row">
+              <a class="icon-btn" href="https://www.instagram.com/hafizautos.pk" target="_blank" rel="noopener" aria-label="Hafiz Autos on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.5" cy="6.5" r="1.15" fill="currentColor" stroke="none"/></svg></a>
+              <a class="icon-btn" href="https://www.tiktok.com/@hafizautos.pk" target="_blank" rel="noopener" aria-label="Hafiz Autos on TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg></a>
+              <a class="icon-btn" href="https://www.facebook.com/hafizautos.pk" target="_blank" rel="noopener" aria-label="Hafiz Autos on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+              <a class="icon-btn" href="https://www.youtube.com/@hafizautos_pk" target="_blank" rel="noopener" aria-label="Hafiz Autos on YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </article>
+
+        <article class="work-item alt">
+          <h3>HijabScarf Hub</h3>
+          <p class="work-sub">Brand &amp; social media setup from scratch</p>
+          <div class="icon-row">
+              <a class="icon-btn" href="https://www.instagram.com/hijabscarf.hub" target="_blank" rel="noopener" aria-label="HijabScarf Hub on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.5" cy="6.5" r="1.15" fill="currentColor" stroke="none"/></svg></a>
+              <a class="icon-btn" href="https://www.tiktok.com/@hijabscarf.hub" target="_blank" rel="noopener" aria-label="HijabScarf Hub on TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg></a>
+              <a class="icon-btn" href="https://www.facebook.com/hijabscarf.hub" target="_blank" rel="noopener" aria-label="HijabScarf Hub on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          </div>
+        </article>
+
+        <article class="work-item">
+          <h3>Page Audits</h3>
+          <p class="work-sub">Detailed page audits delivered for 5 brands</p>
+          <ul class="audit-list">
+            <li><a class="icon-btn sm" href="https://www.instagram.com/abdullahfalak786" target="_blank" rel="noopener" aria-label="Abdullah Falak on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.5" cy="6.5" r="1.15" fill="currentColor" stroke="none"/></svg></a><b>Abdullah Falak</b></li>
+            <li><a class="icon-btn sm" href="https://www.instagram.com/tamworkstation" target="_blank" rel="noopener" aria-label="TAM Workstation on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.5" cy="6.5" r="1.15" fill="currentColor" stroke="none"/></svg></a><b>TAM Workstation</b></li>
+            <li><a class="icon-btn sm" href="https://www.instagram.com/rivo_mind" target="_blank" rel="noopener" aria-label="RivoMind on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.5" cy="6.5" r="1.15" fill="currentColor" stroke="none"/></svg></a><b>RivoMind</b></li>
+            <li><a class="icon-btn sm" href="https://www.instagram.com/zm_store.pk.1" target="_blank" rel="noopener" aria-label="ZM Store on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.5" cy="6.5" r="1.15" fill="currentColor" stroke="none"/></svg></a><b>ZM Store</b></li>
+            <li><a class="icon-btn sm" href="https://www.instagram.com/why_9t_art" target="_blank" rel="noopener" aria-label="Why9tArt on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.5" cy="6.5" r="1.15" fill="currentColor" stroke="none"/></svg></a><b>Why9tArt</b></li>
+          </ul>
+        </article>
+
+        <article class="work-item alt">
+          <h3>Noor Shahid — Personal Brand</h3>
+          <p class="work-sub">My own pages, built from zero</p>
+          <div class="icon-row">
+              <a class="icon-btn" href="https://www.instagram.com/noor.shahid.29" target="_blank" rel="noopener" aria-label="Noor Shahid on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.5" cy="6.5" r="1.15" fill="currentColor" stroke="none"/></svg></a>
+              <a class="icon-btn" href="https://www.facebook.com/noorshahid.pk" target="_blank" rel="noopener" aria-label="Noor Shahid on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+              <a class="icon-btn" href="https://www.tiktok.com/@noor.shahid9" target="_blank" rel="noopener" aria-label="Noor Shahid on TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg></a>
+              <a class="icon-btn" href="https://www.linkedin.com/in/noorshahid-pk" target="_blank" rel="noopener" aria-label="Noor Shahid on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+              <a class="icon-btn" href="https://www.youtube.com/@noorshahid-pk" target="_blank" rel="noopener" aria-label="Noor Shahid on YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+              <a class="icon-btn" href="https://www.pinterest.com/noorshahid29" target="_blank" rel="noopener" aria-label="Noor Shahid on Pinterest"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.367 18.62.002 12.017.002L12.017 0z"/></svg></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="block" id="services">
+    <div class="cols">
+      <div class="side">
+        <p class="kicker">What I Do</p>
+        <h2>Services</h2>
+        <p>Six services, one goal — a page that brings you customers, not just likes.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc"><span class="num">01</span><h3>Social Media Management</h3><p>Posts, reels, stories &amp; captions — your pages managed every month.</p></article>
+        <article class="svc alt"><span class="num">02</span><h3>Meta Ads Campaigns</h3><p>Facebook &amp; Instagram campaigns that bring enquiries, with clear reporting.</p></article>
+        <article class="svc alt"><span class="num">03</span><h3>Content Creation Only</h3><p>Reels, carousels &amp; posts — scripted, designed, delivered ready to post.</p></article>
+        <article class="svc"><span class="num">04</span><h3>Landing Pages &amp; Website Setup</h3><p>HTML, CSS, JavaScript pages — WordPress &amp; Shopify setup too. Price on project details.</p></article>
+        <article class="svc"><span class="num">05</span><h3>Google Business Profile Setup</h3><p>Complete profile setup to get found on Google Search &amp; Maps.</p></article>
+        <article class="svc alt"><span class="num">06</span><h3>NFC Cards</h3><p>One tap shares your contact, socials &amp; portfolio — no reprinting.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="block" id="pricing">
+    <div class="cols">
+      <div class="side">
+        <p class="kicker">Pricing</p>
+        <h2>Transparent pricing, no hidden charges.</h2>
+        <p>Choose the plan that fits your business — every monthly plan starts with 50% advance, and the rest is due at the start of the month.</p>
+      </div>
+      <div>
+        <div class="price-group">
+          <h3 class="pg-title">Social Media Management</h3>
+          <div class="price-cols">
+            <article class="plan"><p class="plan-name">Silver</p><div class="plan-price">Rs 10,000<small> /month</small></div><ul><li>1 platform</li><li>12 posts + 2 reels</li><li>Captions &amp; calendar</li><li>Monthly report</li></ul></article>
+            <article class="plan alt featured"><p class="plan-name">Gold <span class="pop">Most Popular</span></p><div class="plan-price">Rs 20,000<small> /month</small></div><ul><li>2 platforms</li><li>20 posts + 6 reels</li><li>10 stories</li><li>Detailed report</li></ul></article>
+            <article class="plan"><p class="plan-name">Platinum</p><div class="plan-price">Rs 30,000<small> /month</small></div><ul><li>3 platforms</li><li>30 posts + 10 reels</li><li>20 stories</li><li>Strategy call + report</li></ul></article>
+          </div>
+        </div>
+
+        <div class="price-group">
+          <h3 class="pg-title">Meta Ads</h3>
+          <div class="price-cols">
+            <article class="plan"><p class="plan-name">Basic</p><div class="plan-price">Rs 8,000<small> /month</small></div><ul><li>1 campaign</li><li>2 ad creatives</li><li>Audience setup</li><li>Monthly report</li></ul></article>
+            <article class="plan alt featured"><p class="plan-name">Standard <span class="pop">Most Popular</span></p><div class="plan-price">Rs 15,000<small> /month</small></div><ul><li>2 campaigns</li><li>4 ad creatives</li><li>Weekly optimisation</li><li>Bi-weekly report</li></ul></article>
+            <article class="plan"><p class="plan-name">Pro</p><div class="plan-price">Rs 25,000<small> /month</small></div><ul><li>4 campaigns</li><li>8 creatives + retargeting</li><li>Weekly optimisation</li><li>Weekly report</li></ul></article>
+          </div>
+          <p class="price-note">Ad budget is separate — you pay it directly to Meta.</p>
+        </div>
+
+        <div class="price-group">
+          <h3 class="pg-title">Content Only</h3>
+          <div class="price-cols">
+            <article class="plan"><p class="plan-name">Silver</p><div class="plan-price">Rs 10,000<small> /month</small></div><ul><li>4 reels</li><li>4 carousels</li><li>4 static posts</li><li>Script, design, edit &amp; captions</li></ul></article>
+            <article class="plan alt"><p class="plan-name">Gold</p><div class="plan-price">Rs 18,000<small> /month</small></div><ul><li>10 reels</li><li>5 carousels</li><li>5 static posts</li><li>Script, design, edit &amp; captions</li></ul></article>
+            <article class="plan"><p class="plan-name">Platinum</p><div class="plan-price">Rs 30,000<small> /month</small></div><ul><li>16 reels</li><li>8 carousels</li><li>8 static posts</li><li>Voice-over included</li></ul></article>
+          </div>
+          <p class="price-note">Ready-to-post content — posting &amp; page management not included.</p>
+        </div>
+
+        <div class="price-group">
+          <h3 class="pg-title">One-Time</h3>
+          <div class="onetime">
+            <article class="plan"><p class="plan-name">GBP Setup</p><div class="plan-price">Rs 5,000</div><ul><li>One-time setup</li><li>Found on Search &amp; Maps</li></ul></article>
+            <article class="plan alt"><p class="plan-name">NFC Card</p><div class="plan-price">Rs 3,999</div><ul><li>One-time card</li><li>Tap to share contact &amp; socials</li></ul></article>
+            <article class="plan"><p class="plan-name">Page Audit</p><p class="audit-line">Page Audit — a complete review of your page with clear fixes. Message me on WhatsApp to book yours.</p></article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="block" id="about">
+    <div class="cols">
+      <div class="side">
+        <p class="kicker">About</p>
+        <h2>Clear work. No jargon, no fake promises.</h2>
+      </div>
+      <div class="about-text">
+        <p>I'm a Social Media Manager &amp; Meta Ads Specialist working with clients worldwide — completely online.</p>
+        <p>BSCS student at Virtual University, completing a digital marketing &amp; SEO course. You get honest advice, consistent content and clear reporting.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="block" id="contact-form">
+    <div class="cols">
+      <div class="side">
+        <p class="kicker">Contact Form</p>
+        <h2>Send me a message.</h2>
+        <p>Tell me about your brand and what you need — I'll get back to you with clear next steps.</p>
+      </div>
+      <div class="form-card">
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+          <div class="form-grid">
+            <div class="field">
+              <label for="cf-name">Your Name <span class="req">*</span></label>
+              <input id="cf-name" type="text" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="field">
+              <label for="cf-email">Your Email <span class="req">*</span></label>
+              <input id="cf-email" type="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field">
+              <label for="cf-whatsapp">WhatsApp Number</label>
+              <input id="cf-whatsapp" type="tel" name="whatsapp" placeholder="+92 3XX XXXXXXX">
+            </div>
+            <div class="field">
+              <label for="cf-service">Service You Need</label>
+              <select id="cf-service" name="service">
+                <option value="Social Media Management">Social Media Management</option>
+                <option value="Meta Ads">Meta Ads</option>
+                <option value="Content Creation Only">Content Creation Only</option>
+                <option value="Landing Page, WordPress or Shopify Setup">Landing Page, WordPress or Shopify Setup</option>
+                <option value="Google Business Profile Setup">Google Business Profile Setup</option>
+                <option value="NFC Card">NFC Card</option>
+                <option value="Page Audit">Page Audit</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="cf-message">Your Message <span class="req">*</span></label>
+              <textarea id="cf-message" name="message" placeholder="Tell me about your page, your goal, and anything else I should know…" required></textarea>
+            </div>
+          </div>
+          <button class="form-submit" type="submit">Send Message →</button>
+        </form>
+        <div class="form-wa">
+          <p>Prefer to reach me directly? Email <a class="nowrap" href="mailto:noor.shahid2918@gmail.com">noor.shahid2918@gmail.com</a> or WhatsApp / call <a class="nowrap" href="https://wa.me/923056730977" target="_blank" rel="noopener">+92 305 6730977</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- CONTACT -->
+<div class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div class="contact-grid">
+      <div>
+        <p class="kicker">Get in Touch</p>
+        <h2>Have a brand to grow? Let's talk.</h2>
+        <p class="lead">Message me on WhatsApp — I'll review your page and share clear next steps.</p>
+      </div>
+      <div class="contact-card">
+        <a class="btn btn-solid" href="https://wa.me/923056730977?text=Hi%20Noor!%20I%20want%20an%20audit%20for%20my%20page." target="_blank" rel="noopener">Get an Audit on WhatsApp →</a>
+        <div class="contact-rows">
+          <div><b>EMAIL</b><a href="mailto:noor.shahid2918@gmail.com">noor.shahid2918@gmail.com</a></div>
+          <div><b>PHONE / WHATSAPP</b><a class="nowrap" href="https://wa.me/923056730977" target="_blank" rel="noopener">+92 305 6730977</a></div>
+          <div><b>LOCATION</b><span>Lahore, Pakistan (working with clients worldwide)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="wrap">
+  <span>© 2026 Noor Shahid. All rights reserved.</span>
+</footer>
+
+<script>
+(function(){
+  var toggle = document.getElementById('menu-toggle');
+  var nav = document.getElementById('main-nav');
+  if(!toggle || !nav) return;
+  toggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target && e.target.tagName === 'A'){
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      toggle.setAttribute('aria-label','Open menu');
+    }
+  });
+})();
+</script>
+</body>
+</html>
